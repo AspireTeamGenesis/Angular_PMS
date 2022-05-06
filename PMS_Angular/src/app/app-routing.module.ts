@@ -29,6 +29,7 @@ const routes: Routes = [
   {path:"card",component:CardComponent},
   // {path:"",component:SearchComponent}
   {path:"",component:LoginComponent}
+  // {path:"hr-homepage",component:HRhomepage}
 ];
 
 @NgModule({
