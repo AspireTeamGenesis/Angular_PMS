@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -18,6 +17,12 @@ import { CardComponent } from './card/card.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HrhomepageComponent } from './hr/hrhomepage/hrhomepage.component';
+import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
+import { CreateusersComponent } from './hr/createusers/createusers.component';
+import { EducationaldetailsComponent } from './educationaldetails/educationaldetails.component';
+import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
+import { SkilldetailsComponent } from './skilldetails/skilldetails.component';
+import { AchievementdetailsComponent } from './achievementdetails/achievementdetails.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,14 @@ import { HrhomepageComponent } from './hr/hrhomepage/hrhomepage.component';
     CardComponent,
     ViewprofileComponent,
     HrhomepageComponent,
+    PersonaldetailsComponent,
+    CreateusersComponent,
+    EducationaldetailsComponent,
+    ProjectdetailsComponent,
+    SkilldetailsComponent,
+    AchievementdetailsComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

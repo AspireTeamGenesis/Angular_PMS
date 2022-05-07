@@ -15,6 +15,13 @@ import { Changepassword1Component } from './changepassword1/changepassword1.comp
 import { CreateprofileComponent } from './createprofile/createprofile.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { CardComponent } from './card/card.component';
+import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
+import { ComponentFixture } from '@angular/core/testing';
+import { EducationaldetailsComponent } from './educationaldetails/educationaldetails.component';
+import { HrhomepageComponent } from './hr/hrhomepage/hrhomepage.component';
+import { CreateusersComponent } from './hr/createusers/createusers.component';
+import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
+import { SkilldetailsComponent } from './skilldetails/skilldetails.component';
 
 
 const routes: Routes = [
@@ -27,9 +34,15 @@ const routes: Routes = [
   {path:"createprofile",component:CreateprofileComponent},
   {path:"viewprofile",component:ViewprofileComponent},
   {path:"card",component:CardComponent},
-  // {path:"",component:SearchComponent}
+  {path:"personaldetails",component:PersonaldetailsComponent},
+  {path:"educationaldetails",component:EducationaldetailsComponent},
+  {path:"projectdetails",component:ProjectdetailsComponent},
+  {path:"skilldetails",component:SkilldetailsComponent},
+  {path:"hr-homepage",component:HrhomepageComponent},
+  {path:"createusers",component:CreateusersComponent},
+  // {path:"",component:SearchComponent},
   {path:"",component:LoginComponent}
-  // {path:"hr-homepage",component:HRhomepage}
+  // 
 ];
 
 @NgModule({
