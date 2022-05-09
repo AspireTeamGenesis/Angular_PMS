@@ -1,5 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Card } from 'models/cards';
 
 @Component({
   selector: 'app-card',

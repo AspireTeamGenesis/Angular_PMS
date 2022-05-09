@@ -1,116 +1,116 @@
 <div class="container d-flex justify-content-center table-box">
-    <form action="#" class="form">
-        <!-- <h1 class="text-center">Registration Form</h1> -->
-        <!-- Progress bar -->
-        <div class="progressbar">
-            <div class="progress" id="progress"></div>
+  <form action="#" class="form">
+    <!-- <h1 class="text-center">Registration Form</h1> -->
+    <!-- Progress bar -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
 
-            <div class="progress-step progress-step-active" data-title="Personal"></div>
-            <div class="progress-step progress-step-active" data-title="Education"></div>
-            <div class="progress-step" data-title="Project"></div>
-            <div class="progress-step" data-title="Skills"></div>
-            <div class="progress-step" data-title="Achievements"></div>
+      <div class="progress-step progress-step-active" data-title="Personal"></div>
+      <div class="progress-step progress-step-active" data-title="Education"></div>
+      <div class="progress-step" data-title="Project"></div>
+      <div class="progress-step" data-title="Skills"></div>
+      <div class="progress-step" data-title="Achievements"></div>
+    </div>
+
+    <div class="form-step form-step-active">
+      <h3>Educational Details</h3>
+      <div class="input-group">
+        <label for="degree">Degree</label>
+        <input type="text" name="degree" id="degree" placeholder="Enter your degree" />
+      </div>
+      <div class="input-group">
+        <label for="course">Course</label>
+        <input type="text" name="course" id="course" placeholder="Enter your course" />
+      </div>
+      <div class="input-group">
+        <label for="percentage">College</label>
+        <select name="country" id="country">
+          <option value="">Select college/University</option>
+          <option value="">BIT</option>
+          <option value="Australia">SRI KRISHANA</option>
+          <option value="USA">PSNA</option>
+          <option value="Australia">SA</option>
+        </select>
+      </div>
+      <table>
+        <tr>
+          <!-- <div class="input-group"> -->
+          <td>
+            <label for="personaldetails">Year</label>
+          </td>
+          <!-- </div> -->
+        </tr>
+      </table>
+      <!-- <div class="input-group"> -->
+      <label for="personaldetails">From</label>
+      <input type="date" id="personaldetails" />
+      <!-- </div> -->
+      <div class="input-group">
+        <label for="personaldetails">To</label>
+        <input type="date" name="degree" id="personaldetails" />
+      </div>
+      <div class="input-group">
+        <label for="percentage">Percentage</label>
+        <input type="number" name="percentage" id="percentage" placeholder="Enter percentage of marks" />
+      </div>
+
+
+      <div class="button">
+        <a routerLink="/card" class="btn btn-next width-50 ml-auto">Add</a>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col">
+          <div class="kcard" *ngFor="let item of Educationaldetails">
+            <div class="card card-body">
+              <p class="card-text">Degree: </p>
+              <p class="card-text">{{item.degree}}</p>
+              <br>
+              <p class="card-text">Course: </p>
+              <p class="card-text">{{item.course}}</p>
+              <br>
+              <p class="card-text">College: </p>
+              <p class="card-text">{{item.college}}</p>
+              <br>
+              <p class="card-text">Duration:</p>
+              <p class="card-text">{{item.duration}}</p>
+              <br>
+              <p class="card-text">Percentage:</p>
+              <p class="card-text">{{item.percentage}}</p>
+
+              <h2><a class="fa-solid fa-pen fa-sm"></a>
+                <i class="fa-solid fa-trash fa-sm"></i>
+              </h2>
+
+            </div>
+          </div>
         </div>
+        <!-- <button type="button" class="btn btn-primary">Primary</button> -->
 
-        <div class="form-step form-step-active">
-            <h3>Educational Details</h3>
-            <div class="input-group">
-                <label for="degree">Degree</label>
-                <input type="text" name="degree" id="degree" placeholder="Enter your degree" />
-            </div>
-            <div class="input-group">
-                <label for="course">Course</label>
-                <input type="text" name="course" id="course" placeholder="Enter your course" />
-            </div>
-            <div class="input-group">
-                <label for="percentage">College</label>
-                <select name="country" id="country">
-                    <option value="">Select college/University</option>
-                    <option value="">BIT</option>
-                    <option value="Australia">SRI KRISHANA</option>
-                    <option value="USA">PSNA</option>
-                    <option value="Australia">SA</option>
-                </select>
-            </div>
-            <table>
-                <tr>
-                    <!-- <div class="input-group"> -->
-                    <td>
-                        <label for="personaldetails">Year</label>
-                    </td>
-                    <!-- </div> -->
-                </tr>
-            </table>
-            <!-- <div class="input-group"> -->
-            <label for="personaldetails">From</label>
-            <input type="date" id="personaldetails" />
-            <!-- </div> -->
-            <div class="input-group">
-                <label for="personaldetails">To</label>
-                <input type="date" name="degree" id="personaldetails" />
-            </div>
-            <div class="input-group">
-                <label for="percentage">Percentage</label>
-                <input type="number" name="percentage" id="percentage" placeholder="Enter percentage of marks" />
-            </div>
-
-
-            <div class="button">
-                <a routerLink="/card" class="btn btn-next width-50 ml-auto">Add</a>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col">
-                    <!-- <div class="kcard"
-                         *ngFor="let item of Card | paginate: { itemsPerPage: 8, currentPage: page,totalItems:totalLength }"> -->
-                    <div class="card card-body">
-                        <p class="card-text">Degree: </p>
-                        <p class="card-text">{{item.degree}}</p>
-                        <br>
-                        <p class="card-text">Course: </p>
-                        <p class="card-text">{{item.course}}</p>
-                        <br>
-                        <p class="card-text">College: </p>
-                        <p class="card-text">{{item.college}}</p>
-                        <br>
-                        <p class="card-text">Duration:</p>
-                        <p class="card-text">{{item.duration}}</p>
-                        <br>
-                        <p class="card-text">Percentage:</p>
-                        <p class="card-text">{{item.percentage}}</p>
-
-                        <h2><a class="fa-solid fa-pen fa-sm"></a>
-                            <i class="fa-solid fa-trash fa-sm"></i>
-                        </h2>
-
-                    </div>
-                </div>
-            </div>
-            <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-
-            <!-- <div class="btns-group">
+        <!-- <div class="btns-group">
                 <button type="button" class="btn btn-primary">Primary</button> -->
-            <!-- <a href="#" class="btn btn-prev">Previous</a>
+        <!-- <a href="#" class="btn btn-prev">Previous</a>
                 <a href="#" class="btn">Save as Draft</a>
                 <a href="#" class="btn btn-next">Next</a>
             </div> -->
-            <!-- </div> -->
-            <table>
-                <tr>
-                    <div class="row btns-group"></div>
-                </tr>
-                <td>
-                    <a routerLink="/personaldetails" class="btn btn-prev btns-group">Previous</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btns-group">Save as Draft</a>
-                </td>
-                <td>
-                    <a routerLink="/projectdetails" class="btn btn-next btns-group">Next</a>
-                </td>
-            </table>
+        <!-- </div> -->
+        <table>
+          <tr>
+            <div class="row btns-group"></div>
+          </tr>
+          <td>
+            <a routerLink="/personaldetails" class="btn btn-prev btns-group">Previous</a>
+          </td>
+          <td>
+            <a href="#" class="btn btns-group">Save as Draft</a>
+          </td>
+          <td>
+            <a routerLink="/projectdetails" class="btn btn-next btns-group">Next</a>
+          </td>
+        </table>
 
-        </div>
-    </form>
+      </div>
+    </div>
+  </form>
 </div>

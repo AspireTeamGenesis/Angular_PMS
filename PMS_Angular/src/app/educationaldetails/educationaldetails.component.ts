@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from'@angular/common/http';
+import { Educationaldetails } from 'models/educationaldetails';
 
 @Component({
   selector: 'app-educationaldetails',
@@ -24,7 +25,7 @@ export class EducationaldetailsComponent implements OnInit {
       });
   }
 
-  public data: EducationaldetailsComponent[] = [
+  public data: Educationaldetails[] = [
 
   ];
 }

@@ -23,7 +23,7 @@ export class PersonaldetailsComponent implements OnInit {
       });
   }
 
-  public data: PersonaldetailsComponent[] = [
+  public data: Personaldetails[] = [
 
   ];
 }

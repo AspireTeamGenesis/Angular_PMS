@@ -1,6 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { Viewprofile } from 'models/viewprofile';
 @Component({
   selector: 'app-viewprofile',
   templateUrl: './viewprofile.component.html',
@@ -23,9 +23,7 @@ export class ViewprofileComponent implements OnInit {
       });
   }
 
-  public data: ViewprofileComponent[] = [
-
-  ];
+  public data: Viewprofile[] = [];
 }
 
 //   constructor() { }

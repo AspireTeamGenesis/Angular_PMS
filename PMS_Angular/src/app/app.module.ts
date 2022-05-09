@@ -23,6 +23,7 @@ import { EducationaldetailsComponent } from './educationaldetails/educationaldet
 import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
 import { SkilldetailsComponent } from './skilldetails/skilldetails.component';
 import { AchievementdetailsComponent } from './achievementdetails/achievementdetails.component';
+import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AchievementdetailsComponent } from './achievementdetails/achievementdet
     EducationaldetailsComponent,
     ProjectdetailsComponent,
     SkilldetailsComponent,
-    AchievementdetailsComponent
+    AchievementdetailsComponent,
+    AdminhomepageComponent
   ],
 
   imports: [

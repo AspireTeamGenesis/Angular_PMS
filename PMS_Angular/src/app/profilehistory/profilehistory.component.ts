@@ -1,5 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Profilehistory } from 'models/profilehistory';
 
 @Component({
   selector: 'app-profilehistory',
@@ -24,7 +25,7 @@ export class ProfilehistoryComponent implements OnInit {
       });
   }
 
-  public data: ProfilehistoryComponent[] = [
+  public data: Profilehistory[] = [
 
   ];
 }
