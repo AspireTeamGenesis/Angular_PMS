@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-card',
@@ -6,50 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
- 
-  totalLength:any;
+   @Input() artsrc: string = " ";
+  //data: any;
+  totalLength: any;
   page: number = 1;
-  constructor() { }
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-
+    this.http
+      .get<any>(this.artsrc)
+      .subscribe((data) => {
+        this.data = data;
+        this.totalLength = data.length;
+        console.log(data);
+      });
   }
-  cards: any[]= [{
-     name:'Sam',
-     designation:'Module Lead',
-     reportingPerson:'Vijay',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  },{
-    name:'Aju',
-     designation:'SSE',
-     reportingPerson:'Ram',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  },{
-    name:'Aju',
-     designation:'SSE',
-     reportingPerson:'Ram',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  },{
-    name:'Aju',
-     designation:'SSE',
-     reportingPerson:'Ram',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  },{
-    name:'Aju',
-     designation:'SSE',
-     reportingPerson:'Ram',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  },{
-    name:'Aju',
-     designation:'SSE',
-     reportingPerson:'Ram',
-     status:'Approved',
-     profileImage:'./assets/img/profileImage.png'
-  }]
+
+  public data: Card[] = [
+
+  ];
 
 }

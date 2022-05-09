@@ -51,9 +51,11 @@ import { AchievementdetailsComponent } from './achievementdetails/achievementdet
 
   imports: [
     BrowserModule,
+    //HttpModule,
     AppRoutingModule,
     NgxPaginationModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -6,14 +6,15 @@
             <div class="progress" id="progress"></div>
 
             <div class="progress-step progress-step-active" data-title="Personal"></div>
-            <div class="progress-step" data-title="Education"></div>
-            <div class="progress-step" data-title="Project"></div>
+            <div class="progress-step progress-step-active" data-title="Education"></div>
+            <div class="progress-step progress-step-active" data-title="Project"></div>
             <div class="progress-step" data-title="Skills"></div>
             <div class="progress-step" data-title="Achievements"></div>
         </div>
-        <div class="form-step">
+
+        <div class="form-step form-step-active">
             <h3>Project Details</h3>
-           
+
             <div class="input-group">
                 <label for="Proname">Project Name</label>
                 <input type="text" name="Proname" id="Proname" placeholder="Enter Project name" />
@@ -54,37 +55,42 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <div class="card card-body">
-                        <p class="card-text">Project Name : XXX<br>Project Description : YYY <br> From : 25 jan 2006
-                            <br> To : 26 Apr 2006 <br> Role Played : ZZZ <br> Tools Used : WWW </p>
-                        <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash trash fa-sm"></i></h2>
+                    <div class="kcard" *ngFor="let item of Projectdetails">
+                        <div class="card card-body ">
+                            <p class="card-text">Project Name: {{item.projectName}}<br>Project Description:
+                                {{item.projectDescription}} <br> From: {{item.projectduration}}
+                                <br> To:{{item.projectDuration}} <br> Role Played:{{item.role}} <br> Tools Used:
+                                {{item.tools}}
+                            </p>
+                            <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash trash fa-sm"></i></h2>
 
-                    </div>
-                </div>
-                <div class="col">
+                        </div>
+
+                        <!-- <div class="col">
                     <div class="card card-body">
                         <p class="card-text">Project Name : XXX<br>Project Description : YYY <br> From : 25 jan 2006
-                            <br> To : 26 Apr 2006 <br> Role Played : ZZZ <br> Tools Used : WWW </p>
+                            <br> To : 26 Apr 2006 <br> Role Played : ZZZ <br> Tools Used : WWW
+                        </p>
                         <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash fa-sm"></i></h2>
 
                     </div>
-                </div>
-            </div>
+                </div> -->
+                    </div>
 
-            <table>
-                <tr>
-                    <div class="row btns-group"></div>
-                </tr>
-                <td>
-                    <a href="#" class="btn btn-prev btns-group">Previous</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btns-group">Save as Draft</a>
-                </td>
-                <td>
-                    <a href="#" class="btn btn-next btns-group">Next</a>
-                </td>
-            </table>
-        </div>
+                    <table>
+                        <tr>
+                            <div class="row btns-group"></div>
+                        </tr>
+                        <td>
+                            <a [routerLink]="['../educationaldetails']" class="btn btn-prev btns-group">Previous</a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btns-group">Save as Draft</a>
+                        </td>
+                        <td>
+                            <a [routerLink]="['../skilldetails']" class="btn btn-next btns-group">Next</a>
+                        </td>
+                    </table>
+                </div>
     </form>
 </div>

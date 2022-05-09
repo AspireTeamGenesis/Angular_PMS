@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-skilldetails',
@@ -7,9 +8,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkilldetailsComponent implements OnInit {
 
-  constructor() { }
+  //   data: any;
+  //   totalLength: any;
+
+  //   constructor(private http: Httpclient) { }
+
+  //   ngOnInit(): void {
+  //     this.http
+  //     .get<any>(' ')
+  //     .subscribe((data) =>{
+  //       this.data = data;
+  //       this.totalLength = data.length;
+  //     });
+  //   }
+  // }
+
+  @Input() artsrc: string = " ";
+  //data: any;
+  totalLength: any;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http
+      .get<any>(this.artsrc)
+      .subscribe((data) => {
+        this.data = data;
+        this.totalLength = data.length;
+        console.log(data);
+      });
   }
 
+  public data: SkilldetailsComponent[] = [
+
+  ];
 }

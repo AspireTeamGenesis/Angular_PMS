@@ -1,55 +1,66 @@
 <div class="container d-flex justify-content-center table-box">
-    <form action="#" class="form">
-        <div class="form-step">
-    <h3 >Achievements</h3>
+  <form action="#" class="form">
     
-    <div class="input-group">
-      <label for="percentage">Type</label>
-      <select name="country" id="country">
+          <div class="progressbar">
+              <div class="progress" id="progress"></div>
+  
+              <div class="progress-step progress-step-active" data-title="Personal"></div>
+              <div class="progress-step progress-step-active" data-title="Education"></div>
+              <div class="progress-step progress-step-active" data-title="Project"></div>
+              <div class="progress-step progress-step-active" data-title="Skills"></div>
+              <div class="progress-step progress-step-active" data-title="Achievements"></div>
+          </div>
+
+    <div class="form-step form-step-active">
+      <h3>Achievements</h3>
+
+      <div class="input-group">
+        <label for="percentage">Type</label>
+        <select name="country" id="country">
           <option value="">Select type of Achievement</option>
           <option value="">Award</option>
           <option value="Australia">Certification</option>
-      </select>
-    </div>
-    <div class="input-group">
-      <!-- <label for="Role">Role Played</label> -->
-      <input type="file" name="Role" id="Role" />
-    </div>
-    <div class="button">
-      <a href="#" class="btn btn-next width-50 ml-auto">Add</a>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col">
-        <div class="card card-body">
-          <p class="card-text">Type : Award <br>Image: award.png </p>
-         <h2><a ></a><i  class="fa-solid fa-trash fa-sm"></i></h2> 
-          
+        </select>
+      </div>
+      <div class="input-group">
+        <!-- <label for="Role">Role Played</label> -->
+        <input type="file" name="Role" id="Role" />
+      </div>
+      <div class="button">
+        <a href="#" class="btn btn-next width-50 ml-auto">Add</a>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <div class="card card-body">
+            <p class="card-text">Type : Award <br>Image: award.png </p>
+            <h2><a></a><i class="fa-solid fa-trash fa-sm"></i></h2>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-body">
+            <p class="card-text">Type : Award <br>Image: award.png </p>
+            <h2><a></a><i class="fa-solid fa-trash fa-sm"></i></h2>
+
+          </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card card-body">
-          <p class="card-text">Type : Award <br>Image: award.png </p>
-         <h2><a ></a><i  class="fa-solid fa-trash fa-sm"></i></h2> 
-          
-        </div>
-      </div>
-    </div>                
-          
-    <table>
-      <tr>
-        <div class="row btns-group"></div>
-      </tr>
-      <td>
-        <a href="#" class="btn btn-prev btns-group">Previous</a>
-      </td>
-      <td>
-        <a href="#" class="btn btns-group">SaveasDraft</a>
-      </td>
-      <td>
-        <a href="#" class="btn btns-group">Submit</a>
-      </td>
-    </table>
-  </div>
-</form>
+
+      <table>
+        <tr>
+          <div class="row btns-group"></div>
+        </tr>
+        <td>
+          <a [routerLink]="['../skilldetails']" class="btn btn-prev btns-group">Previous</a>
+        </td>
+        <td>
+          <a href="#" class="btn btns-group">SaveasDraft</a>
+        </td>
+        <td>
+          <a [routerLink]="['../viewprofile']" class="btn btns-group">Submit</a>
+        </td>
+      </table>
+    </div>
+  </form>
 </div>
