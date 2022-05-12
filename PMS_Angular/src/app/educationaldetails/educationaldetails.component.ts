@@ -25,7 +25,5 @@ export class EducationaldetailsComponent implements OnInit {
       });
   }
 
-  public data: Educationaldetails[] = [
-
-  ];
+  public data: Educationaldetails[] = [];
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  // role="Admin"
+
   constructor() { }
 
   ngOnInit(): void {
   }
+  // toggle(){
+  //   $('.sidebar, .content').toggleClass("open");
+  // }
 
 }

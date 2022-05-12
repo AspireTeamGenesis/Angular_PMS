@@ -22,6 +22,7 @@ import { HrhomepageComponent } from './hr/hrhomepage/hrhomepage.component';
 import { CreateusersComponent } from './hr/createusers/createusers.component';
 import { ProjectdetailsComponent } from './projectdetails/projectdetails.component';
 import { SkilldetailsComponent } from './skilldetails/skilldetails.component';
+import { AchievementdetailsComponent } from './achievementdetails/achievementdetails.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:"change-password",component:ChangepasswordComponent},
   {path:"change-password1",component:Changepassword1Component},
   {path:"home",component:SearchComponent},
+  {path:"login",component:LoginComponent},
   {path:"login1",component:Login1Component},
   {path:"createprofile",component:CreateprofileComponent},
   {path:"viewprofile",component:ViewprofileComponent},
@@ -38,11 +40,12 @@ const routes: Routes = [
   {path:"educationaldetails",component:EducationaldetailsComponent},
   {path:"projectdetails",component:ProjectdetailsComponent},
   {path:"skilldetails",component:SkilldetailsComponent},
+  {path:"achievementdetails",component:AchievementdetailsComponent},
   {path:"hr-homepage",component:HrhomepageComponent},
   {path:"createusers",component:CreateusersComponent},
   // {path:"",component:SearchComponent},
-  {path:"",component:LoginComponent}
-  // 
+  {path:"",component:EducationaldetailsComponent}
+  //
 ];
 
 @NgModule({

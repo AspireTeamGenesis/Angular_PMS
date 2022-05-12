@@ -24,6 +24,7 @@ import { ProjectdetailsComponent } from './projectdetails/projectdetails.compone
 import { SkilldetailsComponent } from './skilldetails/skilldetails.component';
 import { AchievementdetailsComponent } from './achievementdetails/achievementdetails.component';
 import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,7 @@ import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.comp
 
   imports: [
     BrowserModule,
-    //HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     NgxPaginationModule
   ],

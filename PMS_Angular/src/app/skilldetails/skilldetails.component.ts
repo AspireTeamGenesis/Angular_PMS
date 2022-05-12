@@ -1,6 +1,6 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { Skilldetails } from 'models/skilldetails';
 @Component({
   selector: 'app-skilldetails',
   templateUrl: './skilldetails.component.html',
@@ -39,7 +39,7 @@ export class SkilldetailsComponent implements OnInit {
       });
   }
 
-  public data: SkilldetailsComponent[] = [
+  public data: Skilldetails[] = [
 
   ];
 }

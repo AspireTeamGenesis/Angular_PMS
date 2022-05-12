@@ -1,9 +1,12 @@
+<app-topbar></app-topbar>
+<app-sidebar></app-sidebar>
+
 <div class="container d-flex justify-content-center table-box">
   <form action="#" class="form">
-    
+
           <div class="progressbar">
               <div class="progress" id="progress"></div>
-  
+
               <div class="progress-step progress-step-active" data-title="Personal"></div>
               <div class="progress-step progress-step-active" data-title="Education"></div>
               <div class="progress-step progress-step-active" data-title="Project"></div>
@@ -52,13 +55,13 @@
           <div class="row btns-group"></div>
         </tr>
         <td>
-          <a [routerLink]="['../skilldetails']" class="btn btn-prev btns-group">Previous</a>
+          <a routerLink="/skilldetails" class="btn btn-prev btns-group">Previous</a>
         </td>
         <td>
           <a href="#" class="btn btns-group">SaveasDraft</a>
         </td>
         <td>
-          <a [routerLink]="['../viewprofile']" class="btn btns-group">Submit</a>
+          <a routerLink="/viewprofile" class="btn btns-group">Submit</a>
         </td>
       </table>
     </div>

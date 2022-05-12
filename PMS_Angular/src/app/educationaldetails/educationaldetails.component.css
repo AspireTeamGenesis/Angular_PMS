@@ -11358,11 +11358,11 @@ body {
   .msg{
       margin-left: 30%;
   }
- 
+
   .block{
       margin-left: 20%;
   }
-  
+
 }
 @media (min-width: 1600px) and (max-width: 1724px) {
   div .n-d-flex {
@@ -11398,9 +11398,9 @@ div .center{
   padding: 10px 25px;
   margin: 0px 30px;
   min-height: 60vh;
-  
+
   align-items: center;
-  justify-content: center;    
+  justify-content: center;
 }
 
 .btn{
@@ -11416,10 +11416,10 @@ div .center{
   border-radius: 50%;
 }
 
-.n-container { 
+.n-container {
   height: 200px;
   position: relative;
-  border: 3px solid green; 
+  border: 3px solid green;
 }
 
 .center {
@@ -11471,7 +11471,7 @@ select{
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
-  
+
 }
 input {
   display: block;
@@ -11563,18 +11563,18 @@ input {
 
 /* Form */
 .form {
-  width: clamp(520px, 50%, 630px);
+  width: clamp(520px, 40%, 730px);
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 0.35rem;
   padding: 2.5rem;
 }
 
-.form-step {
+/* .form-step {
   display: none;
   transform-origin: top;
   animation: animate 0.5s;
-}
+} */
 
 .form-step-active {
   display: block;
@@ -11602,8 +11602,8 @@ input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  margin-left: 50%;
- 
+  margin-left: 20%;
+
 }
 .btns-group1 {
   width:150px;
@@ -11625,10 +11625,19 @@ input {
   grid-auto-rows: 50px;
   margin-left:113%;
 }
+.btn-next{
+  margin-left: 35%;
+ 
+}
+
+.btn-prev{
+  width:100 ;
+  margin-left: auto;
+}
 
 .btn {
   /* align-items: center;    */
-  
+
   display: block;
   text-decoration: none;
   background-color: #967bb6;
@@ -11636,14 +11645,14 @@ input {
   text-align: center;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.0s;
 }
 .btn:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
 }
 
 .card{
-  padding:5px;background-color: white; border: 1px solid black;width: 10rem;margin-left: 30px;float:left; margin-bottom: 10px; 
+  padding:5px;background-color: white; border: 1px solid black;width: 10rem;margin-left: 30px;float:left; margin-bottom: 10px;
   border-radius: 20px;
 }
 /* .card-img-top{
@@ -11657,7 +11666,7 @@ input {
 .fa-pen
 {
    text-indent:1rem;
-   
+
 }
 .status{
   float:right;

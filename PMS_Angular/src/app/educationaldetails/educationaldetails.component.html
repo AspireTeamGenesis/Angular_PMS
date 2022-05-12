@@ -1,3 +1,6 @@
+<!-- <app-topbar></app-topbar> -->
+<!-- <app-sidebar></app-sidebar> -->
+
 <div class="container d-flex justify-content-center table-box">
   <form action="#" class="form">
     <!-- <h1 class="text-center">Registration Form</h1> -->
@@ -36,7 +39,7 @@
         <tr>
           <!-- <div class="input-group"> -->
           <td>
-            <label for="personaldetails">Year</label>
+            <label for="personaldetails">Duration</label>
           </td>
           <!-- </div> -->
         </tr>
@@ -56,13 +59,13 @@
 
 
       <div class="button">
-        <a routerLink="/card" class="btn btn-next width-50 ml-auto">Add</a>
+        <a routerLink="/card" class="btn btn-add ">Add</a>
       </div>
       <br>
 
       <div class="row">
         <div class="col">
-          <div class="kcard" *ngFor="let item of Educationaldetails">
+          <!-- <div class="kcard" *ngFor="let item of Educationaldetails">
             <div class="card card-body">
               <p class="card-text">Degree: </p>
               <p class="card-text">{{item.degree}}</p>
@@ -83,7 +86,7 @@
                 <i class="fa-solid fa-trash fa-sm"></i>
               </h2>
 
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- <button type="button" class="btn btn-primary">Primary</button> -->
@@ -96,21 +99,19 @@
             </div> -->
         <!-- </div> -->
         <table>
-          <tr>
+          <!-- <tr>
             <div class="row btns-group"></div>
-          </tr>
+          </tr> -->
           <td>
-            <a routerLink="/personaldetails" class="btn btn-prev btns-group">Previous</a>
+            <a routerLink="/personaldetails" class="btn btn-prev btns-group ">Previous</a>
           </td>
           <td>
-            <a href="#" class="btn btns-group">Save as Draft</a>
+            <a href="#" class="btn btn-save btns-group ">Save as Draft</a>
           </td>
           <td>
-            <a routerLink="/projectdetails" class="btn btn-next btns-group">Next</a>
+            <a routerLink="/projectdetails" class="btn btn-next btns-group ">Next</a>
           </td>
         </table>
-
       </div>
-    </div>
   </form>
 </div>

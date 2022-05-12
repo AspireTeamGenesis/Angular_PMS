@@ -1,3 +1,6 @@
+<app-topbar></app-topbar>
+<app-sidebar></app-sidebar>
+
 <div class="container d-flex justify-content-center table-box">
     <form action="#" class="form">
 
@@ -37,37 +40,41 @@
                 <a href="#" class="btn btn-next width-50 ml-auto">Add</a>
             </div>
             <br>
+
             <div class="row">
                 <div class="col">
+                  <!-- <div class="kcard" *ngFor="let item of Skilldetails">
+                    <div class="card card-body">
+                        <p class="card-text">Domain: {{item.domain}}<br>Technology: {{item.technology}}</p>
+                        <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash fa-sm"></i></h2>
+                    </div>
+
+                  </div> -->
+                </div>
+                <!-- <div class="col">
                     <div class="card card-body">
                         <p class="card-text">Domain : IT<br>Technology : Dot NET</p>
                         <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash fa-sm"></i></h2>
 
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card card-body">
-                        <p class="card-text">Domain : IT<br>Technology : Dot NET</p>
-                        <h2><a class="fa-solid fa-pen fa-sm"></a><i class="fa-solid fa-trash fa-sm"></i></h2>
-
-                    </div>
-                </div>
+                </div> -->
             </div>
+          </div>
 
             <table>
                 <tr>
                     <div class="row btns-group"></div>
                 </tr>
                 <td>
-                    <a [routerLink]="['../projectdetails']" class="btn btn-prev btns-group">Previous</a>
+                    <a routerLink="/projectdetails" class="btn btn-prev btns-group">Previous</a>
                 </td>
                 <td>
                     <a href="#" class="btn btns-group">SaveasDraft</a>
                 </td>
                 <td>
-                    <a [routerLink]="['../achievementsdetails']" class="btn btn-next btns-group">Next</a>
+                    <a routerLink="/achievementsdetails" class="btn btn-next btns-group">Next</a>
                 </td>
             </table>
-        </div>
+        <!-- </div> -->
     </form>
 </div>

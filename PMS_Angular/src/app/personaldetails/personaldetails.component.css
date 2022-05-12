@@ -3851,7 +3851,7 @@ input[type="button"].btn-block {
     pointer-events: none;
 }
 
-.input-group {
+/* .input-group {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3862,7 +3862,7 @@ input[type="button"].btn-block {
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
-}
+} */
 
 .input-group>.form-control,
 .input-group>.form-control-plaintext,
@@ -5133,7 +5133,7 @@ input[type="button"].btn-block {
     padding: 1.25rem;
 }
 
-  
+
 
 .card-title {
     margin-bottom: 0.75rem;
@@ -5904,17 +5904,17 @@ a.badge-dark.focus {
     background-size: 1rem 1rem;
 }
 
-.progress-bar-animated {
+/* .progress-bar-animated {
     -webkit-animation: progress-bar-stripes 1s linear infinite;
     animation: progress-bar-stripes 1s linear infinite;
-}
+} */
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
         -webkit-animation: none;
         animation: none;
     }
-}
+} */
 
 .media {
     display: -webkit-box;
@@ -7148,7 +7148,7 @@ a.close.disabled {
     }
 }
 
-.spinner-border {
+/* .spinner-border {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -7158,7 +7158,7 @@ a.close.disabled {
     border-radius: 50%;
     -webkit-animation: spinner-border .75s linear infinite;
     animation: spinner-border .75s linear infinite;
-}
+} */
 
 .spinner-border-sm {
     width: 1rem;
@@ -7186,7 +7186,7 @@ a.close.disabled {
     }
 }
 
-.spinner-grow {
+/* .spinner-grow {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -7196,7 +7196,7 @@ a.close.disabled {
     opacity: 0;
     -webkit-animation: spinner-grow .75s linear infinite;
     animation: spinner-grow .75s linear infinite;
-}
+} */
 
 .spinner-grow-sm {
     width: 1rem;
@@ -11331,7 +11331,7 @@ body {
     /* margin-left: 2rem; */
     margin-top: 1rem;
   }
-  
+
   /* Tablebox overwritten */
   .n-table-box {
     padding-top: 100px;
@@ -11348,9 +11348,9 @@ body {
       text-align: right;
     }
   }
-  
+
   /* Media query for 1200 margin left */
-  
+
   @media (min-width: 992px) and (max-width: 1600px) {
     div .n-d-flex {
       margin-left: 20%;
@@ -11358,11 +11358,11 @@ body {
     .msg{
         margin-left: 30%;
     }
-   
+
     .block{
         margin-left: 20%;
     }
-    
+
   }
   @media (min-width: 1600px) and (max-width: 1724px) {
     div .n-d-flex {
@@ -11398,9 +11398,9 @@ div .center{
     padding: 10px 25px;
     margin: 0px 30px;
     min-height: 60vh;
-    
+
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .btn{
@@ -11416,12 +11416,12 @@ div .center{
     border-radius: 50%;
 }
 
-.n-container { 
+.n-container {
     height: 200px;
     position: relative;
-    border: 3px solid green; 
+    border: 3px solid green;
   }
-  
+
   .center {
     margin: 0;
     position: absolute;
@@ -11447,13 +11447,13 @@ div .center{
   :root {
     --primary-color: #967bb6;
   }
-  
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;    margin: 0;
     display: grid;
@@ -11471,7 +11471,7 @@ div .center{
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 0.25rem;
-    
+
   }
   input {
     display: block;
@@ -11492,20 +11492,20 @@ div .center{
     border: 1px solid #ccc;
     border-radius: 0.25rem;
   }
-  
+
   .width-50 {
     width: 30%;
   }
-  
+
   .ml-auto {
     margin-left: auto;
     margin-top: 4%;
   }
-  
+
   .text-center {
     text-align: center;
   }
-  
+
   /* Progressbar */
   .progressbar {
     position: relative;
@@ -11514,7 +11514,7 @@ div .center{
     counter-reset: step;
     margin: 2rem 0 4rem;
   }
-  
+
   .progressbar::before,
   .progress {
     content: "";
@@ -11526,13 +11526,13 @@ div .center{
     background-color: #dcdcdc;
     z-index: -1;
   }
-  
+
   .progress {
     background-color: var(--primary-color);
     width: 0%;
     transition: 0.3s;
   }
-  
+
   .progress-step {
     width: 2.1875rem;
     height: 2.1875rem;
@@ -11542,12 +11542,12 @@ div .center{
     justify-content: center;
     align-items: center;
   }
-  
+
   .progress-step::before {
     counter-increment: step;
     content: counter(step);
   }
-  
+
   .progress-step::after {
     content: attr(data-title);
     position: absolute;
@@ -11555,12 +11555,12 @@ div .center{
     font-size: 0.85rem;
     color: #666;
   }
-  
+
   .progress-step-active {
     background-color: #967bb6;
     color: white;
   }
-  
+
   /* Form */
   .form {
     width: clamp(520px, 50%, 630px);
@@ -11569,22 +11569,22 @@ div .center{
     border-radius: 0.35rem;
     padding: 2.5rem;
   }
-  
-  .form-step {
+
+  /* .form-step {
     display: none;
     transform-origin: top;
     animation: animate 0.5s;
-  }
-  
+  } */
+
   .form-step-active {
     display: block;
     position: relative;
   }
-  
+
   .input-group {
-    margin: 2rem 0;
+    margin: 1.3rem 0;
   }
-  
+
   @keyframes animate {
     from {
       transform: scale(1, 0);
@@ -11595,7 +11595,7 @@ div .center{
       opacity: 1;
     }
   }
-  
+
   /* Button */
   .btns-group {
     width:130px;
@@ -11603,7 +11603,7 @@ div .center{
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     margin-left: 50%;
-   
+
   }
   .btns-group1 {
     width:150px;
@@ -11625,10 +11625,10 @@ div .center{
     grid-auto-rows: 50px;
     margin-left:113%;
   }
-  
+
   .btn {
     /* align-items: center;    */
-    
+
     display: block;
     text-decoration: none;
     background-color: #967bb6;
@@ -11643,7 +11643,7 @@ div .center{
   }
 
   .card{
-    padding:5px;background-color: white; border: 1px solid black;width: 10rem;margin-left: 30px;float:left; margin-bottom: 10px; 
+    padding:5px;background-color: white; border: 1px solid black;width: 10rem;margin-left: 30px;float:left; margin-bottom: 10px;
     border-radius: 20px;
 }
 /* .card-img-top{
@@ -11657,7 +11657,7 @@ div .center{
 .fa-pen
  {
      text-indent:1rem;
-     
+
  }
 .status{
     float:right;
